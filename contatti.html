@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Burger | Contatti</title>
+    <meta name="author" content="Luis Antonio Web Design">
+    <meta name="description" content="Il futuro dei burger è qui. Future burger">
+    <meta name="copyright" content="Copyright 2023 LAWD">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_mini.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Home">
+            <img src="img/logo_scritta.png" alt="Logo Future Burger">
+        </a>
+        <div id="menu">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contatti.html">Contatti</a>
+        </div>
+        <div class="menu_x">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="div_contatti">
+        <h1>Prenota un tavolo</h1>
+        <form action="prenotazioni.php" method="post" enctype="multipart/form-data">
+            <div class="label_half">
+                <label for="for_name">Nome</label>
+                <input type="text" id="for_name" name="for_name">
+            </div>
+            <div class="label_half label_right">
+                <label for="for_surname" class="label_half">Cognome</label>
+                <input type="text" id="for_surname" name="for_surname">
+            </div>
+            <div class="label_half">
+                <label for="for_mail" >E-mail</label>
+                <input type="text" name="for_email" id="for_email">
+            </div>
+            <div class="label_half label_right">
+                <label for="for_tel">Telefono</label>
+                <input type="tel" name="for_tel" id="for_tel" pattern="[0-9] +">
+            </div>
+            <div class="label_3">
+                <label for="for_day">Giorno</label>
+                <input type="date" name="for_day" id="for_day" >
+            </div>
+            <div class="label_3 label_right">
+                <label for="for_time">Ora</label>
+                <input type="time" name="for_time" id="for_time">
+            </div>
+            <div class="label_3 label_right">
+                <label for="for_persons">Numero coperti</label>
+                <input type="number" name="for_persons" id="for_persons" min="1">
+            </div>
+            <div class="label_half">
+                <label for="for_tavolo">Tavolo all'esterno o all'interno</label>
+                <select name="for_tavolo" id="for_tavolo">
+                    <option value="Interno" selected>Interno</option>
+                    <option value="Esterno">Esterno</option>
+                </select>
+            </div>
+            <div class="label_full label_intolleranze">
+                <p>Comunicaci qualche intolleranza alimentare</p>
+                <input type="checkbox" name="Latticini" id="Latticini" value="Latticini"> Senza latticini
+                <input type="checkbox" name="Celiachia" id="Celiachia" value="Celiachia"> Senza Glutine
+                <input type="checkbox" name="Frutta secca" id="Frutta secca" value="Frutta secca"> Frutta secca
+                
+            </div>
+            <textarea name="for_message" id="for_message" placeholder="Facci sapere qualsiasi necessit&agrave; o intolleranza alimentare."></textarea>
+            <input type="submit" name="for_submit" id="for_submit" value="Prenota">
+        </form>
+    </div>
+    <footer>
+        <div id="footer_testo">
+            <img src="img/logo_scritta.png" alt="Logo Future Burger">
+            <a href="https://www.google.com/maps/place/NAD-New+Academy+of+Design/@s45.4223085,10.9812667,17z/data=!3m1!4b1!4m6!3m5!1s0x477f5fbd1fabdb65:0x4c86e1d8e457f735!8m2!3d45.4223085!4d10.9838416!16s%2Fg%2F12mkw9m1j?entry=ttu" target="_blank">Via: Lorem, ipsum dolor.</a>
+            <a href="mailto:futureburger@burgeritalia.it">Mail: futureburger@burgeritalia.it</a>
+            <p>P.IVA 12345677890</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.3567976644467!2d10.981266676476727!3d45.422308471073364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5fbd1fabdb65%3A0x4c86e1d8e457f735!2sNAD-New%20Academy%20of%20Design!5e0!3m2!1sen!2sit!4v1701710716693!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: hsla(30, 90%, 90%, 1);
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 90px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+h2{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+/*************** - Header - *****************/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-color: hsla(30, 90%, 55%, 1);
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+header img{
+    height: 100px;
+}
+#menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+header .menu_x{
+    display: none;
+}
+header .menu_x span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: hsla(30, 90%, 90%, 1);
+}
+
+/*************** - Slider - ***************/
+
+.slider{
+    margin-top: 150px;
+    height: 400px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position-x: 85% ;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slider h1{
+    margin-bottom: 60px;
+}
+.slider a{
+    font-size: 25px;
+    padding: 10px 30px;
+    color: hsla(270, 90%, 25%, 1);
+    background-color: hsla(30, 90%, 90%, 1);
+    border: 5px solid hsla(30, 90%, 90%, 1);
+    border-radius: 5px;
+}
+.slider a:hover{
+    background-color: hsla(30, 90%, 90%, .3);
+}
+
+/*************** - Home - ***************/
+
+.home_menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    justify-content: space-between;
+}
+.home_menu img{
+    width: 23%;
+}
+.home_menu .button{
+    margin-top: 50px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    text-align: center;
+}
+.home_menu a{
+    font-size: 25px;
+    padding: 10px 30px;
+    color: hsla(270, 90%, 25%, 1);
+    background-color: hsla(30, 90%, 90%, 1);
+    border: 5px solid hsla(30, 90%, 90%, 1);
+    border-radius: 5px;
+}
+.home_menu a:hover{
+    background-color: hsla(30, 90%, 90%, .3);
+}
+.home_menu .home_menu_mt{
+    margin-top: 100px;
+}
+.home_menu .home_menu_mb{
+    margin-bottom: 100px;
+}
+
+.home_specialita{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+.home_specialita img, .home_specialita .home_specialita_testo{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 400px;
+}
+.home_specialita .home_specialita_testo{
+    padding: 0 100px;
+    text-align: center;
+}
+
+.home_orario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+}
+.home_orario table{
+    width: 800px;
+    line-height: 50px;
+    background-color: hsla(280, 100%, 60%, 1);
+}
+.home_orario tr, .home_orario th, .home_orario td{
+    text-align: center;
+}
+.home_orario th{
+    width: 40%;
+}
+.home_orario thead tr :first-child{
+    width: 20%;
+}
+.home_orario tbody tr :first-child{
+    border-right: 5px solid hsla(30, 90%, 55%, 1);
+}
+
+.home_tavolo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+.home_tavolo img, .home_tavolo .home_tavolo_testo{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 400px;
+}
+.home_tavolo .home_tavolo_testo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+    text-align: center;
+}
+.home_tavolo .home_tavolo_testo a{
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 10px 30px;
+    color: hsla(270, 90%, 25%, 1);
+    background-color: hsla(30, 90%, 90%, 1);
+    border: 5px solid hsla(30, 90%, 90%, 1);
+    border-radius: 5px;
+}
+.home_tavolo .home_tavolo_testo a:hover{
+    background-color: hsla(30, 90%, 90%, .3);
+}
+
+.home_recensioni{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    text-align: center;
+}
+.home_recensioni .home_recensioni_social{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.home_recensioni .home_recensioni_social a img{
+    width: 75px;
+}
+/*************** - Menu - ***************/
+
+.div_menu{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+}
+.div_menu h1{
+    align-self: center;
+}
+.div_menu .div_menu_sx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div_menu .div_menu_sx ul{
+    margin: 50px 0;
+}
+.div_menu .div_menu_sx img{
+    height: 300px;
+}
+.div_menu .menu_end{
+    align-self: end;
+}
+.div_menu li{
+    list-style-image: url(../img/logo_mini.png);
+    font-size: 27px;
+    line-height: 65px;
+    margin-left: 45px;
+}
+
+/************* - Contatti - ***************/
+
+.div_contatti{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+}
+.div_contatti form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.div_contatti .label_half{
+    flex-basis: 48%;
+}
+.div_contatti .label_right{
+    margin-left: auto;
+}
+.div_contatti .label_full{
+    flex-basis: 100%;
+}
+.div_contatti .label_3{
+    flex-basis: 30%;
+}
+.div_contatti input, 
+.div_contatti textarea,
+.div_contatti select 
+{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: 3px solid hsla(30, 90%, 55%, 1);
+    background-color: hsla(30, 90%, 90%, 1);
+    color: hsla(270, 90%, 30%, 1);;
+}
+.div_contatti .label_intolleranze input{
+    width: auto;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.div_contatti textarea{
+    height: 130px;
+    resize: none;
+}
+.div_contatti input[type="submit"]{
+    width: 150px;
+    background-color: hsla(270, 90%, 50%, 1);
+    color: hsla(30, 90%, 90%, 1);;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 15px;
+}
+.div_contatti input[type="submit"]:hover{
+    background-color: hsla(30, 90%, 55%, 1);
+}
+
+/*************** - Footer - ***************/
+
+footer {
+    height: 400px;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 6px solid hsla(30, 90%, 55%, 1);
+    background-color: hsla(10, 100%, 100%, .3);
+}
+#footer_testo{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+#footer_testo a, #footer_testo p{
+    margin-left: 15px;
+}
+footer img{
+    height: 100px;
+    width: 178px;
+    margin-bottom: 15px;
+}
+footer iframe{
+    height: 90%;
+    width: 50%;
+    border: 0;
+}
+
+/************* - Media query - ***************/
+
+@media screen and (max-width: 1000px) {
+    *{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    header{
+        padding: 0 50px;
+    }
+    .slider a, 
+    .home_menu a, 
+    .home_tavolo .home_tavolo_testo a{
+        font-size: 16px;
+    }
+    .home_menu {
+        padding: 50px 50px;
+    }
+    .home_menu img{
+        width: 48%;
+    }
+    .div_menu{
+        padding: 50px 50px;
+    }
+    .div_menu .div_menu_sx img{
+        height: auto;
+        width: 48%;
+    }
+    .div_menu li{
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 840px){
+    .home_specialita{
+        padding: 0;
+    }
+    .home_specialita img{
+        order: 2;
+        width: 100%;
+        min-width: 0;
+    }
+    .home_specialita .home_specialita_testo{
+        padding: 50px 50px;
+    }
+    .home_orario table{
+        width: 500px;
+    }
+    .home_tavolo img, .home_tavolo .home_tavolo_testo{
+        width: 100%;
+    }
+    .home_tavolo .home_tavolo_testo{
+        padding: 0 30px;
+        margin-bottom: 50px;
+    }
+
+    .div_contatti form{
+        width: 500px;
+    }
+
+    footer{
+        height: auto;
+        padding: 50px 30px;
+    }
+    footer iframe{
+        margin-top: 30px;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    *{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    header{
+        padding: 0 10px;
+    }
+    header #menu{
+        display: none;
+    }
+    header .menu_x {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    header .menu_x span:nth-child(2){
+        margin: 10px 0;
+    }
+
+    .slider a, 
+    .home_menu a, 
+    .home_tavolo .home_tavolo_testo a{
+        font-size: 14px;
+    }
+    .home_menu img{
+        width: 100%;
+    }
+    .home_menu{
+        padding: 50px 0;
+    }
+    .home_menu .home_menu_mt{
+        margin-top: 0;
+    }
+    .home_menu .home_menu_mb{
+        margin-bottom: 0;
+    }
+    .home_specialita{
+        padding: 0;
+    }
+    .home_specialita img, 
+    .home_specialita .home_specialita_testo,
+    .home_tavolo img, 
+    .home_tavolo .home_tavolo_testo{
+        width: 100%;
+        min-width: 0;
+    }
+    .home_specialita .home_specialita_testo{
+        padding: 50px 10px;
+    }
+    .home_orario{
+        padding: 50px 0;
+    }
+    .home_orario table{
+        width: 100%;
+    }
+    .home_tavolo{
+        padding: 0;
+    }
+    .home_recensioni{
+        padding: 50px 30px;
+    }
+    .home_recensioni .home_recensioni_social a img{
+        width: 50px;
+    }
+    
+    .div_menu{
+        padding: 50px 30px;
+    }
+    .div_menu .div_menu_sx img{
+        order: 2;
+        width: 100%;
+    }
+    .div_menu ul{
+        margin: 10px 0;
+    }
+    .div_menu li{
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .div_contatti{
+        padding: 50px 30px;
+    }
+    .div_contatti h1{
+        text-align: center;
+    }
+    .div_contatti form{
+        width: 100%;
+    }
+    .div_contatti .label_half,
+    .div_contatti .label_3{
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+    footer iframe{
+        height: 300px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
